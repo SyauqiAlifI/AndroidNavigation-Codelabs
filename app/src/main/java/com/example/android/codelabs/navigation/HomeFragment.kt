@@ -58,12 +58,14 @@ class HomeFragment : Fragment() {
                 popExit = R.anim.slide_out_right
             }
         }
+        //Using .navigate (no action in mobile_navigation)
         view.findViewById<Button>(R.id.navigate_destination_button)?.setOnClickListener {
             findNavController().navigate(R.id.flow_step_one_dest, null, options)
         }
         //TODO END STEP 6
 
         //TODO STEP 7.2 - Update the OnClickListener to navigate using an action
+        //Using Action in mobile_navigation
         view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.next_action, null)
         )
