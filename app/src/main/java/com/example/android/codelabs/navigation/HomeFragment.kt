@@ -70,7 +70,16 @@ class HomeFragment : Fragment() {
         //TODO END STEP 7.2
     }
 
+    //Setting menu (triple dot)
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.main_menu, menu)
+    }
+
+    //Cart menu
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.shopping_cart -> findNavController().navigate(R.id.shoppingFragment, null)
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
