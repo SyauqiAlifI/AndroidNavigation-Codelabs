@@ -2,6 +2,8 @@
 
 Content: https://codelabs.developers.google.com/codelabs/android-navigation/
 
+This Repo is only for my personal practice
+
 License
 -------
 
